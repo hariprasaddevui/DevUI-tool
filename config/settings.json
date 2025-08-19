@@ -1,0 +1,14 @@
+{
+  "url": "http://192.168.35.10:5500/test.html",
+  "outputDir": "./screenshots",
+  "viewports": [
+    {"width": 375, "height": 667, "name": "Portrait"},
+    {"width": 667, "height": 375, "name": "Landscape"},
+    {"width": 1512, "height": 851, "name": "Desktop"}
+  ],
+  "screenshotOptions": {
+    "fullPage": false,
+    "quality": 80,
+    "type": "jpeg"
+  }
+}
