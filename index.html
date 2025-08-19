@@ -5,7 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #D9D9D9;
+    }
+    .uiView {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .line {
+        display: block;
+        width: 100px;
+        height: 10px;
+        background: #326CDF;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        background: #D63535;
+        border-radius: 50%;
+    }
+    @media (orientation: landscape) and (max-width: 1023px) {
+        .uiView {
+            flex-direction: row;
+        }
+        .line {
+            width: 10px;
+            height: 100px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .uiView {
+            transform: rotate(-45deg);
+        }
+    }
+</style>
 <body>
-    Hello World!
+    <div class="container">
+        <div class="uiView">
+            <span class="line"></span>
+            <div class="circle"></div>
+            <span class="line"></span>
+        </div>
+    </div>
 </body>
 </html>
