@@ -4,7 +4,7 @@
   "description": "Capture screenshots at different viewports using Puppeteer",
   "main": "tool/automateCaptureScreenshot.js",
   "scripts": {
-    "start": "node tool/automateCaptureScreenshot.js"
+    "captureScreenshot": "node tool/automateCaptureScreenshot.js"
   },
   "dependencies": {
     "puppeteer": "^24.16.2"
